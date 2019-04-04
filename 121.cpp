@@ -2,36 +2,23 @@
 class Solution {
  public:
   int maxProfit(vector<int>& prices) {
-    // sort
-    vector<pair<int, int>> tmp;
-    for (int i = 0; i < prices.size(); i++) {
-      tmp.push_back(make_pair(prices[i], i));
+    if (prices.size() < 2) {
+      return 0;
     }
-    sort(tmp.begin(), tmp.end());
-    int left_index = 0;
-    int right_index = tmp.size() - 1;
-    while (left_index < right_index) {
-      cout << "left: " << left_index <<"(" <<tmp[left_index].first <<"," <<tmp[left_index].second<<")"<<"\t";
-      cout << "right: " << right_index <<"(" <<tmp[right_index].first <<"," <<tmp[right_index].second<<")"<<endl;
-      if (tmp[left_index].second < tmp[right_index].second) {
-        return tmp[right_index].first - tmp[left_index].first;
-      }
-      // move left_index or right_index base which was less
-      int left_dis = tmp[left_index + 1].first - tmp[left_index].first;
-      int right_dis = tmp[right_index].first - tmp[right_index - 1].first;
-      if (left_dis < right_dis) {
-        left_index++;
-      } else {
-        right_index--;
-      }
+    int result = 0;
+    int max_before, i;
+    max_before = prices[prices.size() - 1];
+    for (i = prices.size() - 2; i >= 0; --i) {
+      result = max(result, (max_before - prices[i]));
+      max_before = max(max_before, prices[i]);
     }
-    return 0;
+    return result;
   }
 };
 
 int main() {
   Solution t;
-  vector<int> test_data = {4, 1, 2};
+  vector<int> test_data = { 4,1, 2, 8};
   cout << t.maxProfit(test_data);
   return 0;
 }

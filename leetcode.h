@@ -1,5 +1,6 @@
-#include <vector>
 #include <iostream>
+#include <vector>
+#include <map>
 using namespace std;
 #ifndef NULL
 #define NULL 0
@@ -11,4 +12,11 @@ struct TreeNode {
   TreeNode *left;
   TreeNode *right;
   TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
+// Definition for singly-linked list.
+struct ListNode {
+  int val;
+  ListNode *next;
+  ListNode(int x) : val(x), next(NULL) {}
 };
