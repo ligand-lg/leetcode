@@ -5,8 +5,8 @@
  * 转移方程: f(n) = max(f(n-len(w[i]))) i = [...wordDict];
  *          f(0) = 1;
  *          f(n) = -1 (n < 0);
- * T(n) = O(N*M)
- * S(n) = O(N)
+ * T(n) = O(n*m)
+ * S(n) = O(n)
  */
 
 class Solution {
