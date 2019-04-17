@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 #include <algorithm>
+#include <stack>
 using namespace std;
 #ifndef NULL
 #define NULL 0
