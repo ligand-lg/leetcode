@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /*
  * 递归方程: f(n, k) = [...f(n-1, k-1) +n , ...f(n-1, k)]，其中 n >= k > 0;

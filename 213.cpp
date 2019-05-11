@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /* 
  * 1. 同198题，转移方程: f(n) = max(f(n-1), f(n-2) + a[n]) （ 1 < n < n )

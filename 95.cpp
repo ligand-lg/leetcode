@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /*
  * 转移方程: f(s, e) = root: i, left: f(s, i-1), right: f(i+1, e), i = [s...e],s

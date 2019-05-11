@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /*
  * 转移方程: f(n) = f(i-1) * f(n-i), i = [1...n], n > 0

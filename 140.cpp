@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /*
  * 转移方程: f(n) = [...f(n - len(w[i])), a[n]]，其中 i = [...wordDict];

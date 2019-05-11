@@ -1,7 +1,6 @@
-.vscode/*
+.vscode/
 .idea/
 cmake-build-debug/
 CMakeLists.txt
 test.cpp
-test
 ms/

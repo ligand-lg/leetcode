@@ -1,4 +1,4 @@
-#include "../leetcode.h"
+#include "leetcode.h"
 
 /*
  * 转移方程: f(n1, n2) = min(f(n1-1, n2-1) + not_same(w1[n1-1], w2[n2-1]),
