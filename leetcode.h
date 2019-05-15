@@ -1,38 +1,42 @@
+
+#ifndef LEETCODE_H
+#define LEETCODE_H
+
 #include <iostream>
 #include <vector>
 #include <map>
+#include <unordered_map>
 #include <set>
+#include <unordered_set>
 #include <algorithm>
 #include <stack>
 #include <queue>
 #include <math.h>
 #include <stdlib.h>
+
 using namespace std;
-#ifndef NULL
-#define NULL 0
-#endif
 
 // Definition for a binary tree node.
 struct TreeNode {
   int val;
   TreeNode *left;
   TreeNode *right;
-  TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+  TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
 // Definition for singly-linked list.
 struct ListNode {
   int val;
   ListNode *next;
-  ListNode(int x) : val(x), next(NULL) {}
+  ListNode(int x) : val(x), next(nullptr) {}
+  ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 struct RandomListNode {
   int label;
   struct RandomListNode *next, *random;
-  RandomListNode(int x) :
-      label(x), next(NULL), random(NULL) {
-  }
+  RandomListNode(int x) : label(x), next(NULL), random(NULL) {}
 };
 
 // 按行打印二叉树
@@ -77,3 +81,5 @@ void print_tree(TreeNode *pRoot) {
     cout << endl;
   }
 }
+
+#endif
