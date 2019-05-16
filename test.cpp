@@ -16,5 +16,7 @@ int getSum(int a, int b) {
 
 int main() {
 //  cout << getSum(-1, 1);
-  cout << sizeof(int);
+  int a = 1;
+  if ( 0 < a < 2)
+    cout << a;
 }
