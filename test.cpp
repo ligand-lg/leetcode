@@ -16,7 +16,6 @@ int getSum(int a, int b) {
 
 int main() {
 //  cout << getSum(-1, 1);
-  int a = 1;
-  if ( 0 < a < 2)
-    cout << a;
+  vector<int> test;
+  cout << test.size();
 }
