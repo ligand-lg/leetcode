@@ -14,8 +14,11 @@ int getSum(int a, int b) {
   return a;
 }
 
+
 int main() {
 //  cout << getSum(-1, 1);
-  vector<int> test;
-  cout << test.size();
+  string s1 = "hello";
+  string s2 = "hellof";
+  cout << (s1 == s2);
+
 }
