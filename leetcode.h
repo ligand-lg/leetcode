@@ -83,6 +83,7 @@ void print_tree(TreeNode *pRoot) {
 }
 
 // 116
+/**
 class Node {
  public:
   int val;
@@ -93,5 +94,16 @@ class Node {
   Node(int _val, Node *_left, Node *_right, Node *_next) :
       val(_val), left(_left), right(_right), next(_next) {}
 };
+ */
+
+// 138
+class Node {
+ public:
+  int val;
+  Node *next, *random;
+  Node() : val(0), next(nullptr), random(nullptr) {}
+  Node(int _val, Node *_next, Node *_random) : val(_val), next(_next), random(_random) {}
+};
+
 
 #endif
