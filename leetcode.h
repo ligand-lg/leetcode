@@ -3,6 +3,7 @@
 #define LEETCODE_H
 
 #include <iostream>
+#include <list>
 #include <vector>
 #include <map>
 #include <unordered_map>
