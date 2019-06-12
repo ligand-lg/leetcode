@@ -1,4 +1,10 @@
-#include "leetcode.h"
+/**
+ *
+ * T(n) = O(?)
+ * S(n) = O(1)
+ */
+
+#include "../leetcode.h"
 
 class Solution {
  public:
@@ -25,9 +31,3 @@ class Solution {
     return result;
   }
 };
-
-int main() {
-  Solution s;
-  cout << s.addBinary("11", "10");
-  return 0;
-}
