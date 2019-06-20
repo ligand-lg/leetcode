@@ -19,20 +19,20 @@ class Solution {
     if (nums[mid] == target)
       return mid;
 
-    // case 1   1,2,3
+    // case1 1,2,3
     if (nums[begin] < nums[mid] && nums[mid] < nums[end - 1]) {
       if (nums[mid] < target)
         return rotated_binary_search(nums, mid + 1, end, target);
       else
         return rotated_binary_search(nums, begin, mid, target);
     } else if (nums[begin] > nums[mid]) {
-      // case 7,0,1,2
+      // case2 3,1,2
       if (nums[mid] < target && target <= nums[end - 1])
         return rotated_binary_search(nums, mid + 1, end, target);
       else
         return rotated_binary_search(nums, begin, mid, target);
     } else {
-      // case 2,3,4,0,1
+      // case3 2,3,1
       if (nums[mid] > target && nums[begin] <= target)
         return rotated_binary_search(nums, begin, mid, target);
       else
