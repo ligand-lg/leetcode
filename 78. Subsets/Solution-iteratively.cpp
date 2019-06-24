@@ -15,18 +15,16 @@ class Solution {
  public:
   vector<vector<int>> subsets(vector<int> &nums) {
     vector<vector<int>> res;
-    vector<int> empty;
-    res.push_back(empty);
+    res.emplace_back();
 
     for (auto n : nums) {
       int size = res.size();
-      for (int i = 0; i < size; i++) {
-        vector<int> new_sub(res[i]);
-        new_sub.push_back(n);
-        res.push_back(new_sub);
+      for (int i = 0; i < size; ++i) {
+        res.push_back(res[i]);
+        auto &item = res.back();
+        item.push_back(n);
       }
     }
-
     return res;
   }
 };
