@@ -62,11 +62,3 @@ class Solution {
     return 0;
   }
 };
-
-int main() {
-  vector<string> test_case = {"hot", "dot", "dog", "lot", "log", "cog"};
-  string begin = "hit";
-  string end = "cog";
-  Solution s;
-  cout << s.ladderLength(begin, end, test_case);
-}
