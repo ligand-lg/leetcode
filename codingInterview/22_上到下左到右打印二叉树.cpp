@@ -1,19 +1,21 @@
 #include "../leetcode.h"
 
 class Solution {
- public:
-  vector<int> PrintFromTopToBottom(TreeNode* root) {
-    queue<TreeNode*> helper;
-    vector<int> result;
-    TreeNode* next;
-    for (helper.push(root); !helper.empty(); helper.pop()) {
-      next = helper.front();
-      if (next != nullptr) {
-        result.push_back(next->val);
-        helper.push(next->left);
-        helper.push(next->right);
+public:
+    vector<int> PrintFromTopToBottom(TreeNode* root) {
+      vector<int> res;
+      queue<TreeNode *> que;
+      que.push(root);
+      TreeNode *tmp;
+      while(!que.empty()) {
+        tmp = que.front();
+        que.pop();
+        if (tmp != nullptr) {
+          res.push_back(tmp->val);
+          que.push(tmp->left);
+          que.push(tmp->right);
+        }
       }
+      return res;
     }
-    return result;
-  }
 };
