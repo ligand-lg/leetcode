@@ -77,7 +77,7 @@ TreeNode *str_to_tree(string data) {
   queue<TreeNode *> tmp;
   tmp.push(nodes[i++]);
   while (i < nodes.size()) {
-    auto ele = tmp.front();
+    TreeNode *ele = tmp.front();
     tmp.pop();
     if (ele != nullptr) {
       ele->left = nodes[i];
@@ -98,7 +98,7 @@ void print_tree(TreeNode *root) {
     tmp.push(nullptr);
 
     while (!tmp.empty()) {
-      auto next = tmp.front();
+      TreeNode *next = tmp.front();
       tmp.pop();
       if (next == nullptr) {
         cout << endl;

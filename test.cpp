@@ -1,11 +1,12 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include "leetcode.h"
 
-using namespace std;
 
 int main(int, char **) {
-  int a{12};
-  cout << a;
+  vector<int> v = {1,2,3,4,5};
+  reverse(v.begin()+1, v.begin()+4);
+  for (int i = 0; i < v.size(); i++){
+    cout << v[i] << "";
+  }
+
   return 0;
 }
