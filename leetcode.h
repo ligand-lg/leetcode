@@ -14,6 +14,7 @@
 #include <queue>
 #include <math.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 using namespace std;
 
