@@ -2,11 +2,10 @@
 
 
 int main(int, char **) {
-  vector<int> v = {1,2,3,4,5};
-  reverse(v.begin()+1, v.begin()+4);
-  for (int i = 0; i < v.size(); i++){
-    cout << v[i] << "";
-  }
+  string s = "你";
+  auto len = s.length();
+  auto a = s[1];
+  cout << len << a;
 
   return 0;
 }
