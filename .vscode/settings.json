@@ -9,6 +9,8 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "queue": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "ostream": "cpp",
+        "ios": "cpp"
     }
 }
