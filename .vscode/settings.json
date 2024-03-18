@@ -12,6 +12,7 @@
         "stack": "cpp",
         "ostream": "cpp",
         "ios": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "set": "cpp"
     }
 }
