@@ -10,3 +10,5 @@
 ### map<char, string> m; m['a']; m.size() => 1; [key] 操作的逻辑是，获取key对应value的引用，没有的话会创建一个key。所以更建议用at
 
 ### int a[100]; a 的每个element 并不会自动设为default value，想要手动初始化。
+
+### for (size_t i = 30; i >= 0; --i) size_t 为负数时候没有检查，会自动overflow到 int max
